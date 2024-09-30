@@ -1,1 +1,105 @@
+@font-face {
+    font-family: 'GeneralSans-Regular';
+    src: url('fonts/GeneralSans-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --font1 : 'GeneralSans-Regular';
+
+    --color1 :#007173;
+    --color2 :#0B3938;
+    --color3: #FFE1D6;
+    --colorHover:#0F1828;
+}
+
+
+
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; }
+
+*{
+    box-sizing: border-box;
+}
+a{color: inherit; text-decoration: none;}
+body{
+
+    font-family: var(--font1);
+    position: relative;
+    max-width: 1512px;
+    margin: auto;
+}
+
+body *{ outline: 1px dashed red; }
+body:before{ content: url(home.jpg); opacity: .5; position: absolute; top: 0; left: 0; right: 0; margin: auto; }
+
+
+/* presets */
+
+.btn{ font-family: var(--font1); border-radius: 150px; font-weight: 600; line-height: 56px; font-size: 16px; display: block; padding: 0 23px;}
+
+.btn_primary{ background: var(--color1); color: #fff; }
+.btn_primary:hover{
+    background: var(--color2);
+}
+
+.btn_secondary{
+    background: #fff;
+    border: 1px solid #0F182880;
+ 
+
+}
+
+
+
+
+.wrapper{ max-width: 1320px; width: 100%; margin: auto; position: relative; }
+
+
+
+header{max-width: 1320px;position: absolute;top: 25px;left: 0;right: 0;margin: auto;z-index: 1;border-radius: 150px;padding: 10px 17px 10px 30px;}
+.header_con{display: flex;justify-content: space-between;align-items: center;}
+.main_logo{}
+.main_logo a{}
+.main_logo a figure{}
+.main_logo a figure img{}
+
+
+header nav{}
+header nav .main_nav{display: flex;gap: 5px;margin-left: 51px;}
+header nav .main_nav li{}
+header nav .main_nav li a.nav_btn{position: relative;padding: 14px 30px 14px 20px;border-radius: 150px;font-weight: 500;background: #fff;}
+header nav .main_nav li a.nav_btn:hover{background: var(--color3);color: var(--colorHover);text-shadow: 0px 0px 1px var(--colorHover);}
+
+header nav .main_nav li a.nav_btn:hover:before{transform: scaleY(-1) rotate(90deg);}
+header nav .main_nav li a.nav_btn:before{content:'\203A'; position:absolute; right:9px; font-size:22px;top: 13px;transform: rotate(90deg);transition: .3s ease;}
+
+header nav > ul .child_nav{ display: none; position: absolute;top: 100%;left: 0;right: 0;background: red;}
+
+.header_btn{
+    display: flex;
+    align-items: center;
+    gap: 31px;
+
+}
+.search{
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    background-image: url(images/icon/MagnifyingGlass.png);
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-position: center;
+}
+.search:hover{
+    transform: scale(1.1);
+}
+
+
+#hero{}
+
+.hero_con{padding-top: 150px;}
+.hero_info{}
