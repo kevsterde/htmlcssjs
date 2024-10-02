@@ -1,93 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code Connect</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="wrapper">
-        <div class="header_con">
-          <div class="main_logo">
-            <a href="#"><figure><img src="images/main_logo.png" alt="Logo"></figure></a>
-          </div>
-          
-          <nav>
-            <ul class="main_nav">
-              <li><a href="#" class="nav_btn">Our Properties</a>
-              
-                  <div class="properties_nav child_nav">
-                      <div class="title">
-                        <h4>Our Properties</h4>
-                        <a href="#">Learn more</a>
-                      </div>
 
-                      <div class="map">
-                          <a href="#">
-                            <img src="images/vic.png" alt="">
-                            <h5>VIC</h5>
-                          </a>
-                          <a href="#">
-                            <img src="images/nsw.png" alt="">
-                            <h5>NSW</h5>
-                          </a>
-                          <a href="#">
-                            <img src="images/qld.png" alt="">
-                            <h5>QLD</h5>
-                          </a>
-                          <a href="#">
-                              <img src="images/sa.png" alt="">
-                            <h5>SA</h5>
-                          </a>
-                          <a href="#">
-                              <img src="images/act.png" alt="">
-                            <h5>ACT</h5>
-                          </a>
-                          <a href="#">
-                              <img src="images/wa.png" alt="">
-                            <h5>WA</h5>
-                          </a>
-                      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Code Connect</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/media.css" />
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="header_con">
+        <div class="main_logo">
+          <a href="#">
+            <figure><img src="images/main_logo.png" alt="Logo"></figure>
+          </a>
+        </div>
+
+        <nav id="main_menu">
+          <ul class="main_nav">
+            <li><a href="#" class="nav_btn">Our Properties</a>
+              <span class="arrow_tablet">&rsaquo;</span>
+              <div class="properties_nav child_nav">
+                <div class="title">
+                  <h4>Our Properties</h4>
+                  <a href="#" class="btn_tertiary">Learn more</a>
+                </div>
+
+                <div class="map">
+                  <a href="#">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_3458_1497)">
+                        <path d="M60.035 42.3169L51.6193 37.048L43.3912 35.9509L35.4374 37.4666L25.1162 26.7124L18.8513 27.2176L15.2858 21.2559L7 20V51.6564L10.8253 54.1393L27.7579 57.2429L36.0581 52.5081L47.6207 60L58.5337 51.0502L72.0451 49.1014L72.7091 47.4414L60.035 42.3169Z" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3458_1497">
+                          <rect width="65.7091" height="40" fill="white" transform="translate(7 20)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <h5>VIC</h5>
+                  </a>
+                  <a href="#">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_3458_1147)">
+                        <path d="M65.0806 18.9853L59.3027 23.9928L57.9946 21.6308L50.6904 20.5915L48.6736 22.1977L11.5126 20.578L10 45.2645L15.2328 46.2903L17.3586 49.8131L21.1333 49.5162L27.7152 56.3188L32.1304 55.482L37.5539 56.1974L43.4 55.7115L44.5855 60.0846L51.8896 63L59.0438 45.3185L65.0534 38.3269L70 19.0258L69.8228 18L65.0806 18.9853Z" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3458_1147">
+                          <rect width="60" height="45" fill="white" transform="translate(10 18)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <h5>NSW</h5>
+                  </a>
+                  <a href="#">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_3458_62)">
+                        <path d="M21 57.0116L26.3011 57.1593L28.1684 63.7837V63.8699L28.1183 64.7441L48.1697 65.606L49.3226 64.6948L54.348 65.409L54.6738 66L57.0675 63.9437L60 63.3404L58.9974 57.5903L47.5055 42.31L40.7882 37.0031L36.3644 24.9734L34.1587 24.9242L31.0758 15L28.4566 20.7871L28.419 27.2636L24.8474 33.8141L21 32.1888V57.0116Z" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3458_62">
+                          <rect width="39" height="51" fill="white" transform="translate(21 15)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <h5>QLD</h5>
+                  </a>
+                  <a href="#">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_3458_1309)">
+                        <path d="M65 23.6185V13H15V40.4538L27.15 38.6689L37.5836 43.1765L44.991 53.9311L55.259 45.3849L49.9443 59.1798L58.9175 57.1529L63.3138 65.8958L65 67V23.6185Z" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3458_1309">
+                          <rect width="50" height="54" fill="white" transform="translate(15 13)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <h5>SA</h5>
+                  </a>
+                  <a href="#">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_3458_1655)">
+                        <path d="M42.1703 13.9999L23.214 26.5799L23.8428 30.5738L21 39.6283L22.4541 45.5475C22.4541 45.5475 21.131 48.0843 21.3799 47.9933C21.6288 47.9022 23.3974 50.8033 23.3974 50.8033L22.5721 52.2473C22.5721 52.2473 26.1092 56.2672 26.4236 56.1371C26.738 56.007 27.8122 53.249 27.8122 53.249L29.5153 62.8499L37.7293 66.9869L41.7118 55.4346L39.7467 44.1945L43.1004 44.7539V34.4636L48.1572 28.7525L52.8996 27.6207L56.6987 28.7525L59.9869 26.2547H56.9476L53.5284 23.4186L51.4454 23.6008L49.6114 20.7778L45.3799 20.5306L47.1485 18.2019L42.1572 13.9739L42.1703 13.9999Z" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3458_1655">
+                          <rect width="39" height="53" fill="white" transform="translate(21 14)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <h5>ACT</h5>
+                  </a>
+                  <a href="#">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_3458_1075)">
+                        <path d="M58 15.1751L55.0061 13L46.2125 19.8362L44.051 22.0113L41.7284 27.7126L31.2835 30.7119L25.3629 33.6166L23 41.1282L28.8132 61.988L27.6318 65.5682L31.7534 68L40.2382 64.4333L46.9375 64.3252L53.5159 60.1236L57.9731 59.4751L58 15.1751Z" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3458_1075">
+                          <rect width="35" height="55" fill="white" transform="translate(23 13)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <h5>WA</h5>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li><a href="#" class="nav_btn">SDA</a>
+            <span class="arrow_tablet">&rsaquo;</span>
+              <div class="flex_nav child_nav">
+                <div class="child_nav_left">
+                <h4>SDA</h4>
+                  <ul>
+                    <li><a href="#">About SDA</a></li>
+                    <li><a href="#">How to Apply</a></li>
+                    <li><a href="#">Eligibility Check</a></li>
+                    <li><a href="#">FAQs for Investors, Builders & Developers</a></li>
+                  </ul>
+                </div>
+                <div class="child_nav_right">
+                  <figure><img src="images/nav_sda.jpg" alt="SDA"></figure>
+                  <div class="details">
+                  <h5>How to Apply</h5>
+                  <p>Vehicula mattis fermentum in ullamcorper eleifend. Interdum.</p>
+                </div>
+                </div>
+                
+              </div>
+            </li>
+            <li><a href="#" class="nav_btn">About Us</a>
+            <span class="arrow_tablet">&rsaquo;</span>
+            <div class="flex_nav child_nav">
+                <div class="child_nav_left">
+                <h4>ABoutMARAMEO</h4>
+                  <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Governance</a></li>
+                  <li><a href="#">The Team</a></li>
+                  <li><a href="#">The Board</a></li>
+                  <li><a href="#">Why Us</a></li>
+                  </ul>
+                </div>
+                <div class="child_nav_right">
+                  <figure><img src="images/nav_about.jpg" alt="ABout"></figure>
+                  <div class="details">
+                    <h5>Why Us?</h5>
+                    
+                    <p>Vehicula mattis fermentum in ullamcorper eleifend. Interdum.</p>
                   </div>
-              </li>
-              <li><a href="#" class="nav_btn">SDA</a></li>
-              <li><a href="#" class="nav_btn">About Us</a></li>
-              <li><a href="#" class="nav_btn">Resource Hub</a></li>
-              <li><a href="#" class="nav_btn">Media & News</a></li>
-            </ul>
-          </nav>
+                </div>
+              </div>
+            </li>
+            <li><a href="#" class="nav_btn">Resource Hub</a>
+            <span class="arrow_tablet">&rsaquo;</span>
+            <div class="flex_nav child_nav">
+                <div class="child_nav_left">
+                  <h4>Resource Hub</h4>
+                  <ul>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Events</a></li>
+                  </ul>
+                </div>
+                <div class="child_nav_right">
+                  <figure><img src="images/nav_events.jpg" alt="Events"></figure>
+                  <div class="details">
+                  <h5>Events</h5>
+                  <p>Nulla lectus fringilla felis varius consequat rhoncus enim.</p>
+                </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="#" class="nav_btn">Media & News</a>
+            <span class="arrow_tablet">&rsaquo;</span>
+            <div class="flex_nav child_nav">
+                <div class="child_nav_left">
+                  <h4>MEdia and news</h4>
+                  <ul>
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Tenant Stories</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">News</a></li>
+                  </ul>
+                </div>
+                <div class="child_nav_right">
+                  <figure><img src="images/nav_tenant.jpg" alt="SDA"></figure>
+                  <div class="details">
+                  <h5>Tenant Stories</h5>
+                  <p>Proin vulputate aliquam massa id viverra sit non aenean arcu odio.</p>
+                </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
 
 
+
+        <div class="header_btn">
+          <button type="button" class="search" id="searchOpen"></button>
+          <a href="#" class="btn btn_primary">Submit Enquiry</a>
+        </div>
+
+
+        <div class="header_btn header_btn_tablet">
           
-          <div class="header_btn">
-            <button type="button" class="search" id="searchOpen"></button>
-            <a href="#" class="btn btn_primary">Submit Enquiry</a>
-          </div>
+          <span class="toggle_menu" id="toggle_menu">
+            <q class="line"></q>
+            <q class="line"></q>
+            <q class="line"></q>
+          </span>
         </div>
+
+
+
+      
       </div>
-
-    </header>
-
-    <div id="modal">
-        <span id="closeSearch" class="close">&times;</span>
-
-        <h2>How can we help you today?</h2>
-        
-        <div class="input_holder">
-          <input type="text" name="search" id="input_search" placeholder="Enter a keyword to start searching">
-        </div>
     </div>
 
+  </header>
+  <div id="nav_menu_tablet"></div>
+  <div id="modal">
+    <div class="modal_con">
 
-    <div id="hero">
-      
-      <div class="wrapper">
+    
+    <span id="closeSearch" class="close">&times;</span>
 
-        <div class="hero_con">
+    <h2>How can we help you today?</h2>
 
-        
+    <div class="input_holder">
+      <input type="text" name="search" id="input_search" placeholder="Enter a keyword to start searching">
+    </div>
+    </div>
+  </div>
+
+
+  <div id="hero">
+
+    <div class="wrapper">
+
+      <div class="hero_con">
+
+
         <div class="hero_info">
           <h2><span class="heading_primary">Life-changing</span> living </h2>
           <p>In ornare et eget commodo consectetur mauris nec. Risus leo ultricies adipiscing commodo ipsum interdum vulputate. Ut magna et mollis et. </p>
@@ -106,300 +270,310 @@
       </div>
 
 
-      </div>
-
     </div>
-    <div id="main_area">
-      <div class="wrapper">
-        <div class="main_area_con">
-          <figure class="main_image">
-            <img src="images/main.png" alt="main in wheelchair smiling">
+
+  </div>
+  <div id="main_area">
+    <div class="wrapper">
+      <div class="main_area_con">
+   
+
+        <main>
+          <h1>
+            <small class="heading_small">about us</small>
+            <span class="heading_primary">Love where you live</span> with Marameo
+
+          </h1>
+
+
+          <p>Facilisis viverra aliquam nisi at sit platea laoreet nisi ipsum. At nunc malesuada integer etiam. Sit phasellus facilisi gravida fringilla volutpat egestas. Imperdiet nec sit magna pharetra facilisi habitant at. Pellentesque nam pellentesque ullamcorper eget non risus. Lobortis non imperdiet auctor urna morbi pulvinar vestibulum. In in mi in mi vel.</p>
+          <a href="#" class="main_btn btn_tertiary">Learn more about us</a>
+        </main>
+        <figure class="main_image">
+          <img src="images/main.png" alt="main in wheelchair smiling">
+        </figure>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="bottom1">
+    <div class="wrapper">
+      <div class="btm1_con">
+        <h2 class="title">Featured property</h2>
+
+        <div class="btm1_con_holder">
+          <figure class="btm1_image">
+            <img src="images/btm1.png" alt="nice property building">
           </figure>
 
-          <main>
-            <h1>
-              <small class="heading_small">about us</small>
-              <span class="heading_primary">Love where you live</span> with Marameo
-
-            </h1>
-
-
-            <p>Facilisis viverra aliquam nisi at sit platea laoreet nisi ipsum. At nunc malesuada integer etiam. Sit phasellus facilisi gravida fringilla volutpat egestas. Imperdiet nec sit magna pharetra facilisi habitant at. Pellentesque nam pellentesque ullamcorper eget non risus. Lobortis non imperdiet auctor urna morbi pulvinar vestibulum. In in mi in mi vel.</p>
-            <a href="#" class="main_btn btn_tertiary">Learn more about us</a>
-          </main>
-  
-        </div>
-      </div>
-
-    </div>
-
-    <div id="bottom1">
-      <div class="wrapper">
-        <div class="btm1_con">
-          <h2 class="title">Featured property</h2>
-
-          <div class="btm1_con_holder">
-            <figure class="btm1_image">
-              <img src="images/btm1.png" alt="nice property building">
-            </figure>
-
-            <div class="btm1_info">
-              <h3><small class="heading_small">VIC</small> Ovation, Footscray</h2>
+          <div class="btm1_info">
+            <h3><small class="heading_small">VIC</small> Ovation, Footscray</h2>
 
               <p><b>100 Buckley St, Footscray, VIC 3011A</b> A vibrant city-edge atmosphere, thriving melting pot of culture, and a touch of historic Melbourne is just a slice of Footscray’s inner-suburban offering.</p>
 
               <a href="#" class="btn btn_primary">Apply Now</a>
-            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
 
-    <div id="bottom2">
-      <div class="wrapper">
-        <div class="btm2_con">
-          <div class="btm2_info">
-            <h2><small class="heading_small">Our properties</small> Opening the door to your <span class="heading_primary">next home</span></h2>
-            
-            <div class="states">
-              <h3>Select your state</h3>
-              <ul class="">
-                <li><a href="#">Victoria</a></li>
-                <li><a href="#">New South Wales</a></li>
-                <li><a href="#">Queensland</a></li>
-                <li><a href="#">South Australia</a></li>
-                <li><a href="#">Australian Capital Territory</a></li>
-                <li><a href="#">Western Australia</a></li>
-              </ul>
-            </div>
-        
+  <div id="bottom2">
+    <div class="wrapper">
+      <div class="btm2_con">
+        <div class="btm2_info">
+          <h2><small class="heading_small">Our properties</small> Opening the door to your <span class="heading_primary">next home</span></h2>
 
-          </div>
-
-          <figure class="btm2_image">
-            <img src="images/map.png" alt="map">
-          </figure>
-      
-
-        </div>
-      </div>
-
-
-    </div>
-
-
-
-    <div id="bottom3">
-
-      <div class="wrapper">
-        <div class="btm3_con">
-            <div class="btm3_info">
-              <div class="btm3_info_holder_left">
-              <h2>
-                <small class="heading_small">Specialist disability accommodation</small>
-                How we help, 
-                <span class="heading_primary">homes and all</span>
-              </h2>
-              </div>
-
-              <div class="btm3_info_holder_right">
-                <p>Vulputate nec ipsum tincidunt ornare pellentesque sapien nunc adipiscing velit. Pellentesque consectetur sed in nibh. Ut venenatis bibendum pulvinar tempus. Habitasse sapien amet laoreet turpis enim urna at. Sem ultricies proin urna nunc fermentum. Sed sit sed augue arcu. Aliquet aliquam nulla dignissim vel semper. Amet integer donec morbi vitae odio velit risus dictum rhoncus. Maecenas sagittis diam habitant posuere gravida nunc viverra volutpat. Nisl.</p>
-                <ul>
-                  <li><h4><span>374</span> Apartments</h4></li>
-                  <li><h4><span>70</span> Apartments in development</h4></li>
-                  <li><h4><span>444</span> Apartments in total</h4></li>
-                </ul>
-
-                <div class="btn_holder">
-                  <a href="#" class="btn btn_primary">Learn more about SDA</a>
-                  <a href="#" class="btn_tertiary">View properties</a>
-                </div>
-              </div>
-            </div>
-
-            
-            <video autoplay loop muted playsinline>
-              <source src="videos/movie.mp4" type="video/mp4">
-              <source src="videos/movie.ogv" type="video/ogv">
-              <source src="videos/movie.webm" type="video/webm">
-              Your browser does not support the video tag.
-            </video>
-
-
-
-
-
-
-        </div>
-      </div>
-    </div>
-
-
-    <div id="bottom4">
-
-      <div class="wrapper">
-        <div class="btm4_con">
-          <div class="btm4_info">
-            <h2> The Marameo <span class="heading_primary">difference</span></h2>
-            <p>Amet morbi porta scelerisque enim tellus cursus ut. Fermentum condimentum nisi duis nunc purus scelerisque pulvinar vivamus. Nisi aenean potenti feugiat ullamcorper. Posuere semper id egestas faucibus. Mus mauris fermentum facilisi vestibulum lobortis fames aliquam.</p>
-
-            <ul>
-              <li> <h3>Focus on Quality and Technology</h3>
-              <p>Et elementum sit a facilisi porttitor non. Lectus ut risus habitant lectus vitae. Arcu dui quis in orci ullamcorper quisque sit praesent. Vel massa sed molestie est elementum enim amet. Pretium ultrices nunc pellentesque egestas netus proin. Tortor non elementum.</p>
-              </li>
-              <li> <h3>Innovating, Every Day</h3>
-              <p>Vitae leo imperdiet bibendum convallis est elit sit amet. Leo consectetur porttitor lectus lectus tortor tellus. Consectetur in ut imperdiet consectetur quisque. Egestas mi amet in bibendum eu.</p>
-              </li>
-              <li> <h3>Making Your Experience Better</h3>
-              <p>Egestas fusce amet et vel tellus ut habitasse aliquet. Eu sed consectetur lorem in amet praesent malesuada tellus tempus. Mauris ultrices commodo ut elementum mauris nullam. Dolor morbi.</p>
-              </li>
+          <div class="states">
+            <h3>Select your state</h3>
+            <ul class="">
+              <li><a href="#">Victoria</a></li>
+              <li><a href="#">New South Wales</a></li>
+              <li><a href="#">Queensland</a></li>
+              <li><a href="#">South Australia</a></li>
+              <li><a href="#">Australian Capital Territory</a></li>
+              <li><a href="#">Western Australia</a></li>
             </ul>
           </div>
 
-          <figure class="btm3_image">
-            <img src="images/btm4.jpg" alt="girl sitting in wheelchair in kitchen">
-          </figure>
-
 
         </div>
+
+        <figure class="btm2_image">
+          <img src="images/map.png" alt="map">
+        </figure>
+
+
       </div>
     </div>
 
 
-    <div id="bottom5">
+  </div>
 
-      <div class="wrapper">
-        <div class="btm5_con">
-          <h2>News <span class="heading_primary">&</span> Resources <a href="#" class="btn_tertiary">View all articles</a></h2>
 
-          <div class="cards">
-            <div class="card">
-              <figure><img src="images/news1.jpg" alt="news1"></figure>
-              <h4><small class="heading_small">Real Stories, Inclusive Communities</small> Navigating the World of Specialist Disability Accommodation</h4>
-              <p>Egestas morbi non at sit in leo fringilla nunc. Sit nisl ornare tempus sed. Vitae leo ac scelerisque eleifend</p>
+
+  <div id="bottom3">
+
+    <div class="wrapper">
+      <div class="btm3_con">
+        <div class="btm3_info">
+          <div class="btm3_info_holder_left">
+            <h2>
+              <small class="heading_small">Specialist disability accommodation</small>
+              How we help,
+              <span class="heading_primary">homes and all</span>
+            </h2>
+          </div>
+
+          <div class="btm3_info_holder_right">
+            <p>Vulputate nec ipsum tincidunt ornare pellentesque sapien nunc adipiscing velit. Pellentesque consectetur sed in nibh. Ut venenatis bibendum pulvinar tempus. Habitasse sapien amet laoreet turpis enim urna at. Sem ultricies proin urna nunc fermentum. Sed sit sed augue arcu. Aliquet aliquam nulla dignissim vel semper. Amet integer donec morbi vitae odio velit risus dictum rhoncus. Maecenas sagittis diam habitant posuere gravida nunc viverra volutpat. Nisl.</p>
+            <ul>
+              <li>
+                <h4><span>374</span> Apartments</h4>
+              </li>
+              <li>
+                <h4><span>70</span> Apartments in development</h4>
+              </li>
+              <li>
+                <h4><span>444</span> Apartments in total</h4>
+              </li>
+            </ul>
+
+            <div class="btn_holder">
+              <a href="#" class="btn btn_primary">Learn more about SDA</a>
+              <a href="#" class="btn_tertiary">View properties</a>
             </div>
-            <div class="card">
-              <figure><img src="images/news2.jpg" alt="news2"></figure>
-              <h4><small class="heading_small">Real Stories</small> Cursus elit at amet est eget feugiat feugiat sed ipsum gravida.</h4>
-              <p>Ullamcorper eget dolor ullamcorper pellentesque hac eu. Ac id netus purus dictum vitae adipiscing. Dolor risus laoreet ultrices risus non. Tristique.</p>
-            </div>
-            <div class="card">
-              <figure><img src="images/news3.jpg" alt="news3"></figure>
-              <h4><small class="heading_small">Real Stories, Challenges and Solutions</small> Ullamcorper nam leo nunc ac quis dui turpis curabitur est egestas.</h4>
-              <p>Cursus et commodo amet posuere sit auctor feugiat. A lacinia sit nulla ullamcorper congue nulla tincidunt in proin. Adipiscing vitae in ac mi amet.</p>
-            </div>
+          </div>
+        </div>
+
+
+        <video autoplay loop muted playsinline>
+          <source src="videos/movie.mp4" type="video/mp4">
+          <source src="videos/movie.ogv" type="video/ogv">
+          <source src="videos/movie.webm" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <div id="bottom4">
+
+    <div class="wrapper">
+      <div class="btm4_con">
+        <div class="btm4_info">
+          <h2> The Marameo <span class="heading_primary">difference</span></h2>
+          <p>Amet morbi porta scelerisque enim tellus cursus ut. Fermentum condimentum nisi duis nunc purus scelerisque pulvinar vivamus. Nisi aenean potenti feugiat ullamcorper. Posuere semper id egestas faucibus. Mus mauris fermentum facilisi vestibulum lobortis fames aliquam.</p>
+
+          <ul>
+            <li>
+              <h3>Focus on Quality and Technology</h3>
+              <p>Et elementum sit a facilisi porttitor non. Lectus ut risus habitant lectus vitae. Arcu dui quis in orci ullamcorper quisque sit praesent. Vel massa sed molestie est elementum enim amet. Pretium ultrices nunc pellentesque egestas netus proin. Tortor non elementum.</p>
+            </li>
+            <li>
+              <h3>Innovating, Every Day</h3>
+              <p>Vitae leo imperdiet bibendum convallis est elit sit amet. Leo consectetur porttitor lectus lectus tortor tellus. Consectetur in ut imperdiet consectetur quisque. Egestas mi amet in bibendum eu.</p>
+            </li>
+            <li>
+              <h3>Making Your Experience Better</h3>
+              <p>Egestas fusce amet et vel tellus ut habitasse aliquet. Eu sed consectetur lorem in amet praesent malesuada tellus tempus. Mauris ultrices commodo ut elementum mauris nullam. Dolor morbi.</p>
+            </li>
+          </ul>
+        </div>
+
+        <figure class="btm3_image">
+          <img src="images/btm4.jpg" alt="girl sitting in wheelchair in kitchen">
+        </figure>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <div id="bottom5">
+
+    <div class="wrapper">
+      <div class="btm5_con">
+        <h2>News <span class="heading_primary">&</span> Resources <a href="#" class="btn_tertiary">View all articles</a></h2>
+
+        <div class="cards">
+          <div class="card">
+            <figure><img src="images/news1.jpg" alt="news1"></figure>
+            <h4><small class="heading_small">Real Stories, Inclusive Communities</small> Navigating the World of Specialist Disability Accommodation</h4>
+            <p>Egestas morbi non at sit in leo fringilla nunc. Sit nisl ornare tempus sed. Vitae leo ac scelerisque eleifend</p>
+          </div>
+          <div class="card">
+            <figure><img src="images/news2.jpg" alt="news2"></figure>
+            <h4><small class="heading_small">Real Stories</small> Cursus elit at amet est eget feugiat feugiat sed ipsum gravida.</h4>
+            <p>Ullamcorper eget dolor ullamcorper pellentesque hac eu. Ac id netus purus dictum vitae adipiscing. Dolor risus laoreet ultrices risus non. Tristique.</p>
+          </div>
+          <div class="card">
+            <figure><img src="images/news3.jpg" alt="news3"></figure>
+            <h4><small class="heading_small">Real Stories, Challenges and Solutions</small> Ullamcorper nam leo nunc ac quis dui turpis curabitur est egestas.</h4>
+            <p>Cursus et commodo amet posuere sit auctor feugiat. A lacinia sit nulla ullamcorper congue nulla tincidunt in proin. Adipiscing vitae in ac mi amet.</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
 
-    <div id="bottom6">
-      <div class="wrapper">
-        <div class="btm6_con">
-            <div class="btm6_info">
-                <h2>Contact <span class="heading_primary">Marameo</span> today</h2>
-                <p>Integer amet ultrices odio sed amet nulla gravida lectus. Nisl proin quisque pretium porta magnis ullamcorper pellentesque. Nam nibh augue in sed sed felis risus eu.</p>
+  <div id="bottom6">
+    <div class="wrapper">
+      <div class="btm6_con">
+        <div class="btm6_info">
+          <h2>Contact <span class="heading_primary">Marameo</span> today</h2>
+          <p>Integer amet ultrices odio sed amet nulla gravida lectus. Nisl proin quisque pretium porta magnis ullamcorper pellentesque. Nam nibh augue in sed sed felis risus eu.</p>
 
-                <div class="btn_holder">
-                  <a href="#" class="btn btn_primary">Submit Enquiry</a>
-                  <a href="tel:1300-156-555" class="btn btn_secondary">Call us 1300 156 555 </a>
-                </div>
-            </div>
-
-            <figure class="btm6_image">
-              <img src="images/btm6.jpg" alt="girl sitting in wheelchair in kitchen">
-            </figure>
-  
-
+          <div class="btn_holder">
+            <a href="#" class="btn btn_primary">Submit Enquiry</a>
+            <a href="tel:1300-156-555" class="btn btn_secondary">Call us 1300 156 555 </a>
+          </div>
         </div>
+
+        <figure class="btm6_image">
+          <img src="images/btm6.jpg" alt="girl sitting in wheelchair in kitchen">
+        </figure>
+
+
       </div>
     </div>
-    <footer>
-      <div class="wrapper">
+  </div>
+  <footer>
+    <div class="wrapper">
 
-      
+
       <div class="footer_con">
-          <div class="footer_top">
-              <div class="footer_top_logo">
-                    
-                <a href="#" class="ipsum_logo">
-                      <img src="images/footer_logo.png" alt="Logo">
-                    </a>
+        <div class="footer_top">
+          <div class="footer_top_logo">
 
-                    <a href="#" class="ndis_logo">
-                      <img src="images/ndis.png" alt="Logo">
-                    </a>
+            <a href="#" class="ipsum_logo">
+              <img src="images/footer_logo.png" alt="Logo">
+            </a>
 
-                
-              </div>
+            <a href="#" class="ndis_logo">
+              <img src="images/ndis.png" alt="Logo">
+            </a>
 
-              <div class="footer_top_links">
-                  <div class="info_links">
-                    <ul>
-                      <li><a href="tel:1300156555">1300 156 555</a></li>
-                      <li><a href="mailto:info@marameo.com">info@marameo.com</a></li>
-                    </ul>
-                  </div>
 
-                <div class="quick_links">
-                  <h2>QUICK LINKS</h2>
-                  <ul>
-                  <li><a href="#">Our Properties</a></li>
-                  <li><a href="#">Specialist Disability Accommodation</a></li>
-                  <li><a href="#">About Liverty</a></li>
-                  <li><a href="#">Resources</a></li>
-                  <li><a href="#">All Media & News</a></li>
-                  </ul>
-                </div>
-
-                <div class="tenants_links">
-                  <h2>FOR TENANTS</h2>
-                  <ul>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">Support</a></li>
-                  </ul>
-                </div>
-                
-                <div class="other_links">
-                  <a href="#" class="contact_us btn btn_primary">Contact us</a>
-
-                  <ul class="icons">
-                    <li><a class="facebook" href="#"><img src="images/icon/fb.png" alt="fb icon"></a></li>
-                    <li><a class="linkedin" href="#"><img src="images/icon/linkedin.png" alt="linkedin icon"></a></li>
-                    <li><a class="instagram" href="#"><img src="images/icon/ig.png" alt="ig icon"></a></li>
-                  </ul>
-
-                </div>
-
-              </div>
-              
           </div>
 
-          <div class="footer_bottom">
-              <div class="flag_desc">
-                <div class="flags">
-                  <img src="images/icon/flag1.png" alt="flag">
-                  <img src="images/icon/flag2.png" alt="flag">
-                  <img src="images/icon/flag3.png" alt="flag">
-                  <img src="images/icon/flag4.png" alt="flag">
+          <div class="footer_top_links">
+            <div class="info_links">
+              <ul>
+                <li><a href="tel:1300156555">1300 156 555</a></li>
+                <li><a href="mailto:info@marameo.com">info@marameo.com</a></li>
+              </ul>
+            </div>
 
-                </div>
-                <p>We acknowledge the Traditional Owners of the land where we work and live. We pay our respects to Elders past, present, and emerging.</p>
-              </div>
+            <div class="quick_links">
+              <h2>QUICK LINKS</h2>
+              <ul>
+                <li><a href="#">Our Properties</a></li>
+                <li><a href="#">Specialist Disability Accommodation</a></li>
+                <li><a href="#">About Liverty</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">All Media & News</a></li>
+              </ul>
+            </div>
 
-              <p class="copyright">© Copyright Lorem ipsum. Website by <a href="https://marameodesign.com/" class="company_name">Marameo Design</a></p>
+            <div class="tenants_links">
+              <h2>FOR TENANTS</h2>
+              <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </div>
+
+            <div class="other_links">
+              <a href="#" class="contact_us btn btn_primary">Contact us</a>
+
+              <ul class="icons">
+                <li><a class="facebook" href="#"><img src="images/icon/fb.png" alt="fb icon"></a></li>
+                <li><a class="linkedin" href="#"><img src="images/icon/linkedin.png" alt="linkedin icon"></a></li>
+                <li><a class="instagram" href="#"><img src="images/icon/ig.png" alt="ig icon"></a></li>
+              </ul>
+
+            </div>
+
           </div>
+
+        </div>
+
+        <div class="footer_bottom">
+          <div class="flag_desc">
+            <div class="flags">
+              <img src="images/icon/flag1.png" alt="flag">
+              <img src="images/icon/flag2.png" alt="flag">
+              <img src="images/icon/flag3.png" alt="flag">
+              <img src="images/icon/flag4.png" alt="flag">
+
+            </div>
+            <p>We acknowledge the Traditional Owners of the land where we work and live. We pay our respects to Elders past, present, and emerging.</p>
+          </div>
+
+          <p class="copyright">© Copyright Lorem ipsum.  <span>Website by <a href="https://marameodesign.com/" class="company_name">Marameo Design</a></span></p>
+        </div>
 
 
       </div>
     </div>
 
-    </footer>
+  </footer>
 
 
-    <script src="js/main.js"></script>
-  </body>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
