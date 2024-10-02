@@ -56,11 +56,16 @@
         width: 69%;
     }
 
+    .map_container { width: 657px; }
+    .map_container .au_qld {
+        margin-right: 8%;
+        }
     .btm6_info {
 
         margin-right: 20px;
 
     }
+
 
 }
 
@@ -243,6 +248,26 @@
         max-width: 100%;
     }
 
+    .btm2_con{min-height: auto;}
+    .btm2_info { position: relative; top: 0; max-width: 100%; }
+    .btm2_info .states h3{margin-left: 0;}
+    .btm2_info .states ul{display: flex;flex-wrap: wrap; justify-content: center; gap: 20px;text-align: center; 
+    
+    }
+    .btm2_info .states ul li{width: 30%; }
+    .btm2_info .states ul li a {
+        font-family: var(--font1_SemiBold);
+        font-size: 16px;
+        border-radius: 10px;
+        line-height: 24px;
+        text-align: center;
+        padding: 0;
+        }
+
+
+    .btm2_info .states ul li a img{display: block; max-width: fit-content; margin: 0 auto 20px;}
+    .map_container{display: none;}
+
 
 
     .btm3_info {
@@ -385,6 +410,8 @@
         max-width: 400px;
         text-align: center;
     }
+
+    .btm2_info .states ul li{width: 47%; }
 
     .btm3_info_holder_right ul {
         gap: 20px;

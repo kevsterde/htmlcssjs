@@ -923,6 +923,7 @@ main p {}
     max-width: 262px;
     transition: .3s;
 }
+.btm2_info .states ul li a img{display: none;}
 
 .btm2_info .states ul li a:hover {
     background: var(--color3);
@@ -937,6 +938,152 @@ main p {}
     transform: translateY(-50%);
     right: 0;
     width: 69%;
+    opacity: 0;
+    display: none;
+}
+
+.map_container{
+position: absolute;
+display: grid;
+grid-template-columns: 1.44fr 0.8fr 0.27fr 1.3fr 0.6fr;
+grid-template-rows: 0.3fr 0.47fr 1.3fr 1.4fr 0.5fr 1fr 1fr 2fr;
+
+width: 917px;
+top: 50%;
+right: -20px;
+transform: translateY(-50%);
+aspect-ratio: 1/0.8;
+max-width: 80%;
+}
+
+
+.map_container .na{
+    grid-area:na;
+}
+.map_container .au_act{position: absolute;
+width: 14px;
+height: 20px;
+grid-column: 4/5;
+grid-row: 8/8;
+z-index: 1;
+margin-left: 56%;
+top: -14%;
+}
+
+
+.map_container .au_nsw {grid-area:nsw;
+
+    grid-column: 4 / 5;
+    grid-row: 6/7;
+    
+position: absolute;
+margin-right: 9%;
+}
+
+
+    
+
+.map_container .au_nt { grid-area: nt;
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    
+}
+.map_container .au_qld { grid-area:qs;
+    grid-column: 3/5;
+    grid-row: 1/4;
+position: absolute;
+}
+.map_container .au_sa { grid-area:sa;
+
+    grid-column: 2 / 4;
+    grid-row: 5/7;
+position: absolute;
+}
+.map_container .au_tas { position: absolute;
+
+    
+    width: 94px;
+    height: 111px;
+bottom: 0;
+grid-column: 4/5;
+margin-left: 20%;
+}
+.map_container .au_vic{ grid-area:vic;
+    grid-column: 4/5;
+    grid-row: 8/8;
+position: absolute;
+margin-top: -19%;
+margin-right: 36%;
+}
+.map_container .au_wa{ grid-area: wa;
+    grid-column: 1 / 2;
+    grid-row: 3/ 6;
+position: absolute;
+}
+
+.map_container .au_nsw svg,
+.map_container .au_nt svg,
+.map_container .au_qld svg,
+.map_container .au_sa svg,
+.map_container .au_tas svg,
+.map_container .au_vic svg,
+.map_container .au_wa svg,
+.map_container .au_act svg{
+    width: 100%;
+}
+
+
+
+
+
+.map_container h5{
+font-family: var(--font1_SemiBold);
+font-size: 13px;
+line-height: 18px;
+letter-spacing: 2px;
+text-transform: uppercase;
+z-index: 1;
+position: absolute;  width: 100%;
+}
+
+.map_container .au_nsw h5{
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+  
+}
+
+.map_container .au_qld h5{
+    top: 70%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+}
+.map_container .au_sa h5 {
+    top: 30%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+}
+.map_container .au_tas h5,
+.map_container .au_vic h5{
+    top: 55%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+}
+.map_container .au_wa h5
+{
+
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+}
+
+.map_container .au_act h5{
+    top: -6px;
+    left: 150%;
+    text-align: center;
+    width: 170px;
+    text-align: left;
 }
 
 
