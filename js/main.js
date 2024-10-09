@@ -1,4 +1,4 @@
-window.onload = function() {
+
 
 const searchBtn = document.getElementById('searchOpen');
 const closeSearch = document.getElementById('closeSearch');
@@ -45,11 +45,19 @@ arrow_tablet.forEach(arrow => {
 
 
 humburger.addEventListener('click', ()=> {
-    document.body.classList.toggle('hidden');
+    //document.body.classList.toggle('hidden'); fix bug
    
     humburger.classList.toggle('open');
-
     navMenuTablet.classList.toggle('open');
+
+    if(navMenuTablet.classList.contains('open')){
+        document.body.classList.add('hidden2');
+      
+    }
+    else{
+        document.body.classList.remove('hidden2');
+    }
+
 })
 
     var window_width = window.innerWidth;
@@ -65,7 +73,7 @@ humburger.addEventListener('click', ()=> {
        
             header_con.appendChild(mainNav);
             header_con.appendChild(headerBtn);
-            headerBtn.prepend(searchOpenBtn);
+            headerBtn.prependw(searchOpenBtn);
         }
         else{
           
@@ -86,7 +94,7 @@ humburger.addEventListener('click', ()=> {
     swapMenu();
     
 
-};
+
 
 
 

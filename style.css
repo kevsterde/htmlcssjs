@@ -222,7 +222,10 @@ body.hidden {
     overflow: hidden;
     height: 100vh;
 }
-
+body.hidden2 {
+    overflow: hidden;
+    height: 100vh;
+}
 b {
     font-family: var(--font1_SemiBold);
 }
